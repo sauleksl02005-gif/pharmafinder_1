@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PharmaFinder Cameroun aide à rechercher des médicaments et des pharmacies.">
+  <title>PharmaFinder Cameroun</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="PharmaFinder accueil">
+      <span class="brand-mark">+</span>
+      <span>PharmaFinder <small>CAMEROUN</small></span>
+    </a>
+    <span class="top-note">Recherche de médicaments et pharmacies</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">PHARMAFINDER CAMEROUN</p>
+      <h1>Recherchez un médicament.<br><span>Trouvez une pharmacie.</span></h1>
+      <p class="intro">Une plateforme pour consulter les pharmacies et les disponibilités déclarées. Confirmez toujours le stock et le prix directement auprès de la pharmacie.</p>
+      <form class="search" id="search-form">
+        <label class="sr-only" for="medicine-search">Nom du médicament</label>
+        <input id="medicine-search" type="search" placeholder="Nom du médicament (bientôt disponible)" disabled>
+        <button type="button" disabled>Rechercher</button>
+      </form>
+      <p class="notice">La recherche publique sera activée après la prochaine étape de développement.</p>
+    </section>
+
+    <section class="status-card" aria-live="polite">
+      <div>
+        <p class="status-title">État de la plateforme</p>
+        <p id="server-status">Vérification du serveur et de la base de données…</p>
+      </div>
+      <span id="status-indicator" class="status-indicator pending">Vérification</span>
+    </section>
+
+    <section class="features">
+      <article><span>01</span><h2>Recherche</h2><p>Retrouver un médicament par son nom ou son principe actif.</p></article>
+      <article><span>02</span><h2>Pharmacies</h2><p>Consulter les coordonnées et les informations des pharmacies.</p></article>
+      <article><span>03</span><h2>Disponibilité</h2><p>Consulter les stocks déclarés et les prix en FCFA, sous réserve de confirmation.</p></article>
+    </section>
+  </main>
+
+  <footer>
+    <p>PharmaFinder Cameroun · Les informations publiées ne remplacent pas l'avis d'un pharmacien ou d'un professionnel de santé.</p>
+  </footer>
+</body>
+</html>
