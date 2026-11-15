@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f6e">
+  <title>Inscrire ma pharmacie | PharmaFinder</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/inscription.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="nav-container">
+    <a href="/" class="brand">
+      <span class="brand-mark">+</span>
+      <span>PharmaFinder <small>CAMEROUN</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/">Accueil</a>
+      <a href="/connexion.html">Connexion</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="registration-section">
+    <div class="section-heading">
+      <span class="eyebrow">ESPACE PHARMACIE</span>
+      <h1>Inscrire votre pharmacie</h1>
+      <p>
+        Remplissez les informations de votre établissement.
+        Votre demande sera examinée par notre administration.
+      </p>
+    </div>
+
+    <form id="registration-form" class="registration-form">
+
+      <label for="name">Nom de la pharmacie *</label>
+      <input id="name" name="name" type="text"
+        maxlength="150" required placeholder="Nom de l'établissement">
+
+      <label for="address">Adresse complète *</label>
+      <input id="address" name="address" type="text"
+        maxlength="250" required placeholder="Rue, quartier, repère">
+
+      <label for="city">Ville *</label>
+      <input id="city" name="city" type="text"
+        maxlength="100" required placeholder="Ex : Yaoundé">
+
+      <label for="phone">Téléphone *</label>
+      <input id="phone" name="phone" type="tel"
+        maxlength="30" required placeholder="+237 ...">
+
+      <label for="email">Adresse e-mail</label>
+      <input id="email" name="email" type="email"
+        maxlength="150" placeholder="pharmacie@example.com">
+
+      <input type="hidden" id="latitude" name="latitude">
+      <input type="hidden" id="longitude" name="longitude">
+
+      <button type="button" id="gps-button" class="location-button">
+        Utiliser la position GPS de la pharmacie
+      </button>
+
+      <p id="gps-message" aria-live="polite">
+        Autorisez la géolocalisation lorsque le navigateur le demande.
+      </p>
+
+      <button type="submit" id="submit-button">
+        Envoyer ma demande
+      </button>
+
+      <p id="registration-message" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 PharmaFinder Cameroun</p>
+  </div>
+</footer>
+
+</body>
+</html>
