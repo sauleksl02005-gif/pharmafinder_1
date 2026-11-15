@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087f6e">
+  <title>Créer un compte | PharmaFinder Cameroun</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/inscription-compte.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="nav-container">
+    <a href="/" class="brand">
+      <span class="brand-mark">+</span>
+      <span>PharmaFinder <small>CAMEROUN</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/">Accueil</a>
+      <a href="/connexion.html">Connexion</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="registration-section">
+
+    <div class="section-heading">
+      <span class="eyebrow">BIENVENUE</span>
+      <h1>Créer un compte</h1>
+      <p>Rejoignez PharmaFinder Cameroun.</p>
+    </div>
+
+    <form id="account-form" class="registration-form">
+
+      <label for="full-name">Nom complet</label>
+      <input
+        type="text"
+        id="full-name"
+        placeholder="Votre nom complet"
+        maxlength="100"
+        required
+      >
+
+      <label for="account-email">Adresse e-mail</label>
+      <input
+        type="email"
+        id="account-email"
+        placeholder="Votre adresse e-mail"
+        required
+      >
+
+      <label for="account-password">Mot de passe</label>
+      <input
+        type="password"
+        id="account-password"
+        placeholder="Au moins 8 caractères"
+        minlength="8"
+        required
+      >
+
+      <label for="confirm-password">Confirmer le mot de passe</label>
+      <input
+        type="password"
+        id="confirm-password"
+        placeholder="Confirmez votre mot de passe"
+        minlength="8"
+        required
+      >
+
+      <button type="submit" id="account-button">
+        Créer mon compte
+      </button>
+
+      <p id="account-message" aria-live="polite"></p>
+    </form>
+
+    <p>
+      Vous avez déjà un compte ?
+      <a href="/connexion.html">Se connecter</a>
+    </p>
+
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2026 PharmaFinder Cameroun</p>
+  </div>
+</footer>
+
+</body>
+</html>
