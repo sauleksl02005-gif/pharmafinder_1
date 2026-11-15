@@ -45,6 +45,7 @@ const apiLimiter = rateLimit({
 });
 
 app.use("/api", apiLimiter);
+app.use("/api", require("./routes/health"));
 
 // Fichiers publics
 app.use(express.static(path.join(__dirname, "public")));
